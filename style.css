@@ -1,0 +1,188 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;justify-content: end;
+}
+
+.nav ul li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    display: inline;
+    justify-content: end;
+    margin-left: 20px;
+    
+}
+
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+   
+  
+    
+    
+}
+
+.nav ul li a:hover {
+    background-color:  #cf215e;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+
+
+.profile {
+    max-width: 600px;
+   
+}
+
+.profile p {
+    line-height: 1.5;
+}
+
+img {
+   width: 30vw;
+   animation: floatImage 4s ease-in-out infinite ;
+   border-radius: 1000px;
+     /* This ensures the image maintains its aspect ratio */
+}
+
+
+/* Media query for responsive layout */
+.main{
+    display: flex;
+    flex-direction: row; /* Change to row for horizontal arrangement */
+    
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    
+}
+.Madhu{
+    color: #cf215e;
+}
+#about {
+    margin-top: 20px;
+}
+
+#about dl {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#about dt {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.about dd {
+    margin-bottom: 10px;
+}
+#about{
+    height:auto ;
+    max-width: 100%;
+    box-shadow: 0 0 0 0px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+    
+}
+dt{
+    color: #cf215e;
+}
+dd{
+    color: black;
+}
+#skills-section {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 100px;
+    width: 500px;
+    
+   
+}
+
+.skill h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.skill-item i {
+    margin-right: 40pxpx;
+    
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #cf215e;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Animation for progress bars */
+@keyframes fillProgress {
+    from { width: 0; }
+}
+
+.progress.fill {
+    animation: fillProgress 1s ease-in-out;
+}
+button {
+    font-size: 18px; /* Adjust font size as needed */
+    padding: 12px 20px; /* Adjust padding to increase size */
+    border-radius: 8px; /* Adjust border radius to round the corners */
+    background-color:#cf215e; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: all 0.3s ease; /* Add smooth transition effect */
+    margin-right: 10px; /* Add margin for spacing between buttons */
+}
+
+button:hover {
+    background-color: whitesmoke; /* Darken background color on hover */
+}
+
+button:last-child {
+    margin-right: 0; /* Remove right margin for the last button */
+}
